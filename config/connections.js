@@ -6,7 +6,7 @@ const state ={
 
 
 module.exports.connect = function (done){
-  const   url = 'mongodb://localhost:27017';
+  const   url = "mongodb+srv://Muhammedfahis:2585832000v@cluster0.uk8po.mongodb.net/mydb?retryWrites=true&w=majority"
   const   dbName= 'test'
 
 
