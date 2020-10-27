@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row">
+        <form action="/admin/add_retailer" method="POST">
+        
+             <div class="form-group">
+    <label for="exampleInputEmail1">Name</label>
+    <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+  
+
+             <div class="form-group">
+    <label for="exampleInputEmail1">In time</label>
+    <input type="string" name="intime" class="form-control" id="intime" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+       
+
+       
+             <div class="form-group">
+    <label for="exampleInputEmail1">Out time</label>
+    <input type="string" name="outtime" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+       
+       <button onclick="change" type="submit" class="btn btn-success">submit</button>
+
+        
+        </form>
+    </div>
+
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">In Time</th>
+      <th scope="col">Out Time</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each data}}
+    <tr>
+      <td>{{this.name}}</td>
+      <td >{{this.inTime}}</td>
+      <td>{{this.outTime}}</td>
+    </tr>
+    {{/each}}
+   
+  </tbody>
+</table>
+
+</div>
+
