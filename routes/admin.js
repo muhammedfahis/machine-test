@@ -47,8 +47,8 @@ router.post('/login',(req,res)=>{
 
     const inTime= req.body.intime;
     const outTime= req.body.outTime;
+
     
-    console.log(time);
 
     db.get().collection('retailers').insertOne({
       name:req.body.name,
