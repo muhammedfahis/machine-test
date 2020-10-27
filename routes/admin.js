@@ -20,18 +20,18 @@ router.post('/login',(req,res)=>{
   })
 })
 
-  router.post('/test',(req,res)=>{
+  // router.post('/test',(req,res)=>{
 
-    const {email,password} =req.body;
+  //   const {email,password} =req.body;
 
-    db.get().collection('admin').insertOne({
-      email:email,
-      password:password
-    }).then(()=>{
-      res.send('data saved');
-    })
+  //   db.get().collection('admin').insertOne({
+  //     email:email,
+  //     password:password
+  //   }).then(()=>{
+  //     res.send('data saved');
+  //   })
 
-  })
+  // })
 
 
   router.get('/home',(req,res)=>{
